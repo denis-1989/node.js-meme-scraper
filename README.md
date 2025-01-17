@@ -50,3 +50,22 @@ node index.js
 ```
 
 These points summarize the main functionali
+
+## TODOs
+
+- [ ] Figure out how to make `memes` "ignored" in Git
+- [ ] Create a `memes` directory
+- [ ] Investigate how to access the website
+  - [ ] Is "HTTP request" or "fetching" what we want?
+- [ ] Retrieve the HTML string data from the website and store in a variable
+- [ ] Extract the image `src` strings (URLs) in the HTML string (`<img>` elements) to an array of image URLs
+  - [ ] Check whether the image `src` URLs work with the `?width=300`
+- [ ] Separate out the first 10 image URLs from the array
+- [ ] Loop over first 10 image URLs, and for each of them:
+  - [ ] Access the image URL
+    - [ ] Is "HTTP request" or "fetching" what we want?
+  - [ ] Retrieve the image data from the website and store in a variable
+  - [ ] Save the the image data to a file
+    - [ ] Create a new file with a name with a 2-digit number, eg. 01.jpg, 02.jpg, ... 10.jpg.
+    - [ ] Add the data
+- [ ] Test program to make sure it can run multiple times
