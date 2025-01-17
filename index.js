@@ -27,7 +27,7 @@ async function scrapeMemes() {
 
     // Scrape the meme images
     const memeUrls = await page.evaluate(() => {
-      const images = Array.from(document.querySelectorAll('img'));
+      const images = Array.from(document.getElementsByTagName('img'));
       return images.slice(0, 10).map((img) => img.src);
     });
 
